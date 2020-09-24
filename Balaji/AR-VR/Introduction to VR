@@ -4,6 +4,52 @@
 """The user is effectively immersed in a responsive virtual world.
                                            -Freed Brooks(1999) """
 
-Virtual reality(VR) is a computer generated graphical representation of real or fantasy world. The expierence delivered by this will be very different from 
-watching TV at home or going to cinema. The expierence delivered by this would be immersive, engaging and interactive, we can get this immersive experience by using a small 
-range of vr displays like CAVE live systems or Head Mounted Display(HMD). Major players in Virtual Reality display's include HTC Vive, Oculus Rift and PlayStation VR (PSVR).
+Virtual reality(VR) is a computer generated graphical representation of real or fantasy world. The expierence delivered by this would be immersive, engaging and interactive, this
+will be very different from watching TV at home or going to cinema. We can get this immersive experience by using a small range of vr displays like CAVE live systems or Head
+Mounted Displays(HMD). Major players in Virtual Reality display's include HTC Vive, Oculus Rift and PlayStation VR (PSVR).The three things that make VR more immersive than other
+types of media are 3D stereovision, user dynamic control over viewpoint and surrounding expierence. The VR places the person inside an experience instead of viewing a screen, users
+are immersed and made to interact with a 3D world. VR simulates as many senses as possible such as vision, hearing and touch. 
+
+VR Displays
+
+CAVE system
+
+Most popular VR display's are HMD display's there is also another display that is less known i.e., CAVE system. The CAVE refers to cave automatic virtual environment. It's normally
+an empty room with just four display walls. That's three walls around us plus the floor. There are projectors behind the walls to project high resolution images. In order to perceive
+3D stereovision, the user would wear a pair of shutter glasses. So at any given time, they only see through one of their glasses. The displays are synced to the shutter glasses, so 
+they will produce images that are for the correct eye at the correct moment and this switches at least 60 times per second to produce the illusion of 3D stereovision similar to HMD's.
+In In the CAVE, we also have user dynamic control of view point. This is achieved by attaching the head tracking device on top of the shutter glasses, and updating the display in 
+realtime according to the viewpoint of the user. So although you can probably have more than one user standing in the space, each wearing a pair of shutter glasses, only one of them 
+could be wearing the head tracking device that is synced to the machine that renders the graphics. This will be the only person who has the dynamic control of view point.
+For other users, the display could feel a bit distorted. Finally, because of the four surrounding walls, the user feels that they are surrounded by the computer generated images rather than the 
+real world. Again, all three features contribute to the immersive VR experience. In summary, the CAVE is designed to be used by a single user whose head position will be tracked. It takes
+a large and dedicated space. It's normally set up as a fixture in research labs in both academia and industry. And truly, you can't carry your CAVE system with you.
+Because of the size of the display, you could have very high resolution, but you will need powerful machines to drive that. Both CAVEs and HMDs are designed for single users. You can have 
+VR applications with multiple users, but each one will need their own display device, that is, either a CAVE or HMD. The CAVEs have a big screen with high resolution. In comparison, the HMD is 
+currently much lower in their resolutions. The CAVEs take a large and dedicated space, while the HMDs are more flexible in their space requirements.
+
+HMD's
+We tracked the user's head in order to update the displays according to the user's viewpoint. It's important we can do it very quickly to maintain emotion. Most VR devices on the market have this 
+tracking latency controlled at level of single digit milliseconds. So it's not noticeable in most cases. There are other processes in this procedure that could cause further delays in updating the graphics, but they are independent of
+the tracking technology we're talking about here. And we will discuss those other factors later in the course. Secondly, we need to track the user's viewpoint in the 3D space. This implies we have 
+to track their head rotation and position. In the CAVE, there are normally built-in systems in the small tracker which the user wears on top of their shutter glasses. The built-in tracking system 
+racks the user's head rotation using accelerometer or gyrometer or both. They can be very tiny and the same methods are actually used in most smartphones in order to support features such as autorotation
+when you flip your phone like this. For position tracking, external optical tracking devices are normally used. In the CAVE, it could be several ceiling-mounted infrared cameras pointing at a user so they
+can calculate the position of the user in the 3D space and feed the data to the machine, which then takes care of updating the display accordingly. Here, how you mount the cameras is important as this 
+defines the range of capturing. So when you come outside of the CAVE or come very close to one of the walls, you might lose position tracking as not all cameras can see the head tracker. The same applies 
+to HMD head-tracking. We would need to use built-in accelerometers and gyrometers to track the user's head rotation and external optical devices to track their head position. In this case, the external 
+infrared sensor is mounted in front of the user as you can see here. And again, the range of capturing depends on how the sensor is set up. If the sensor is set up in front of you and you move away to a 
+place where the sensor can no longer see you, then we lose position tracking, which means the graphics can no longer update according to your viewing position. It is important to mention that not all devices
+come with position tracking. Some have rotation tracking only. This means that you can still look around but you are stuck where you are. You won't be able to move around in VR with your body to get closer to 
+certain objects or observe them from a different angle like you can in real life. You can still navigate the 3D environment with a controller, a touchpad or joystick, but it won't be as natural, and you won't 
+have a good sense of scale in VR without this position tracking. In fact, none of the mobile devices currently on the market come with position tracking, be it Google Daydream or Samsung Gear VR. It's normally 
+a HMD box for you to slot in your smartphone, and they don't come with external optical tracking sensors like the high-end HMD devices do. Part of the reason for this is that mobile VR is very much about their
+unsophisticated setup, and that you can move freely in a room without out of range problems. So it's against the design principles to add a sensor which will then bring new constraints. Also, integrating position
+tracking and updating the graphics in real time potentially could consume a lot of computational power, which is more difficult to support with just a mobile phone. There are possible technical solutions to track
+the position of the HMDs without relying on external position tracking devices. For instance, a technology called self-tracking or inside-out tracking has had some success. It is beyond the scope of this course 
+but you're free to read about it. It's basically still a challenging problem in machine vision. You might get it to work in certain conditions, but it might not be robust enough to work in everyone's living room
+with their own personal lighting conditions. At the time of recording, I have not seen a consumer-oriented VR headset that comes with robust position tracking, but this might change quite quickly over time.
+It is something to watch out for before buying your VR device. It is possible in the near future we will have wireless HMDs powered by desktop machines, for instance, Bluetooth. So users are free from the 
+constraints of cables yet benefiting from a very powerful machine, which enables sophisticated graphics and interactions beyond the computational power of a mobile phone.
+
+
